@@ -1,0 +1,118 @@
+@import 'config';
+@import 'utilities';
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Oswald&display=swap');
+
+@font-face {
+    font-family: Old Growth;
+    src: url('../fonts/oldgrowth-regular-webfont.woff');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.6;
+    background: $light-color;
+}
+
+a {
+    text-decoration: none;
+    color: $dark-color;
+}
+
+h2, h3, h4 {
+    text-transform: uppercase;
+}
+
+img {
+    width: 100%;
+}
+
+// Main Nav
+#main-nav {
+    display: flex;
+    flex-flow: row-reverse;
+    padding: 1.5rem 1rem;
+
+    ul {
+        display: flex;
+    }
+
+    li {
+        list-style: none;
+        padding: 1rem 1.5rem;
+        font-weight: bold;
+    }
+
+    a {
+        text-decoration: none;
+        font-size: 20px;
+        color: $medium-color;
+        text-transform: uppercase;
+        border-bottom: 3px transparent solid;
+        padding-bottom: 0.5rem;
+        transition: border-color 0.5s;
+
+        &:hover {
+            border-color: $medium-color;
+        }
+
+        &.current {
+            border-color: $main-color;
+        }
+    }
+}
+
+// Header
+#header {
+    // header home
+    &-home {
+        background-attachment: scroll;
+        background: $bg-image no-repeat center left / cover;
+        height: 75vh;
+
+        .header-content {
+            color: $medium-color;
+            position: relative;
+            text-align: center;
+            padding: 4rem;
+
+            h1 {
+                text-align: center;
+                font-family: 'Oswald', sans-serif;
+                font-size: 2rem;
+                font-weight: lighter;
+                line-height: 1.2;
+                padding-bottom: 1.5rem;
+            }
+
+            #typewriter {
+                font-family: Old Growth, 'Oswald';
+                font-size: 2rem;
+                padding-bottom: 1.5rem;
+                color: $main-dark-color;
+                font-weight: bold;
+            }
+
+            .btn-light {
+                text-align: center;
+            }
+        }
+    }
+    // header inner
+    &-inner {
+
+    }
+}
+
+// Home Sections
+#home {
+    &-a {
+        background: $light-color;
+        height: 75vh;
+    }
+}

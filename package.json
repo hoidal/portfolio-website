@@ -1,0 +1,17 @@
+{
+  "name": "personal-website-2.0",
+  "version": "1.0.0",
+  "description": "Personal Website",
+  "main": "index.js",
+  "scripts": {
+    "sass": "node-sass -w scss/ -o dist/css/ --recursive"
+  },
+  "author": "Sam Hoidal",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^4.14.0"
+  },
+  "dependencies": {
+    "typewriter-effect": "^2.13.0"
+  }
+}

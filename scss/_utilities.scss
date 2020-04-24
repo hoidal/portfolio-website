@@ -1,0 +1,64 @@
+.container {
+    max-width: $website-width;
+    padding: 0 1.5rem;
+    margin: auto;
+    overflow: hidden;
+}
+
+// Buttons 
+%btn-shared {
+    display: inline-block;
+    padding: 0.8rem 2rem;
+    transition: all 0.5s;
+    border: none;
+    cursor: pointer;
+}
+
+.btn {
+    &-main {
+        @extend %btn-shared;
+        color: $dark-color;
+        background: $main-color;
+    }
+    &-light {
+        @extend %btn-shared;
+        color: $dark-color;
+        background: $medium-color;
+    }
+    &-dark {
+        @extend %btn-shared;
+        color: $light-color;
+        background: $dark-color;
+    }
+}
+
+button[class^='btn-']:hover,
+a[class^='btn-']:hover,
+input[class^='btn-']:hover {
+    background-color: $main-color;
+}
+
+.lead {
+    font-size: 1.3rem;
+    margin-bottom: 2rem;
+}
+
+.text-center {
+    text-align: center;
+}
+
+// Padding
+.py {
+    &-1 {
+        padding: 1rem 0;
+    }
+    &-2 {
+        padding: 2rem 0;
+    }
+    &-3 {
+        padding: 3rem 0;
+    }
+    &-4 {
+        padding: 4rem 0;
+    }  
+}

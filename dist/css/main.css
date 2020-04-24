@@ -1,0 +1,124 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat|Oswald&display=swap");
+.container {
+  max-width: 1280px;
+  padding: 0 1.5rem;
+  margin: auto;
+  overflow: hidden; }
+
+.btn-main, .btn-light, .btn-dark {
+  display: inline-block;
+  padding: 0.8rem 2rem;
+  transition: all 0.5s;
+  border: none;
+  cursor: pointer; }
+
+.btn-main {
+  color: #17252a;
+  background: #3aafa9; }
+
+.btn-light {
+  color: #17252a;
+  background: #def2f1; }
+
+.btn-dark {
+  color: #feffff;
+  background: #17252a; }
+
+button[class^='btn-']:hover,
+a[class^='btn-']:hover,
+input[class^='btn-']:hover {
+  background-color: #3aafa9; }
+
+.lead {
+  font-size: 1.3rem;
+  margin-bottom: 2rem; }
+
+.text-center {
+  text-align: center; }
+
+.py-1 {
+  padding: 1rem 0; }
+
+.py-2 {
+  padding: 2rem 0; }
+
+.py-3 {
+  padding: 3rem 0; }
+
+.py-4 {
+  padding: 4rem 0; }
+
+@font-face {
+  font-family: Old Growth;
+  src: url("../fonts/oldgrowth-regular-webfont.woff"); }
+
+* {
+  margin: 0;
+  padding: 0; }
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  line-height: 1.6;
+  background: #feffff; }
+
+a {
+  text-decoration: none;
+  color: #17252a; }
+
+h2, h3, h4 {
+  text-transform: uppercase; }
+
+img {
+  width: 100%; }
+
+#main-nav {
+  display: flex;
+  flex-flow: row-reverse;
+  padding: 1.5rem 1rem; }
+  #main-nav ul {
+    display: flex; }
+  #main-nav li {
+    list-style: none;
+    padding: 1rem 1.5rem;
+    font-weight: bold; }
+  #main-nav a {
+    text-decoration: none;
+    font-size: 20px;
+    color: #def2f1;
+    text-transform: uppercase;
+    border-bottom: 3px transparent solid;
+    padding-bottom: 0.5rem;
+    transition: border-color 0.5s; }
+    #main-nav a:hover {
+      border-color: #def2f1; }
+    #main-nav a.current {
+      border-color: #3aafa9; }
+
+#header-home {
+  background-attachment: scroll;
+  background: url("../img/ATACAMA.jpeg") no-repeat center left/cover;
+  height: 75vh; }
+  #header-home .header-content {
+    color: #def2f1;
+    position: relative;
+    text-align: center;
+    padding: 4rem; }
+    #header-home .header-content h1 {
+      text-align: center;
+      font-family: 'Oswald', sans-serif;
+      font-size: 2rem;
+      font-weight: lighter;
+      line-height: 1.2;
+      padding-bottom: 1.5rem; }
+    #header-home .header-content #typewriter {
+      font-family: Old Growth, 'Oswald';
+      font-size: 2rem;
+      padding-bottom: 1.5rem;
+      color: #2b7a78;
+      font-weight: bold; }
+    #header-home .header-content .btn-light {
+      text-align: center; }
+
+#home-a {
+  background: #feffff;
+  height: 75vh; }
