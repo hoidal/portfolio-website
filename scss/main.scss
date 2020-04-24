@@ -1,5 +1,6 @@
 @import 'config';
 @import 'utilities';
+@import 'item_grid';
 
 @import url('https://fonts.googleapis.com/css?family=Montserrat|Oswald&display=swap');
 
@@ -44,7 +45,7 @@ img {
     display: flex;
     flex-flow: row-reverse;
     background: $dark-color;
-    height: 8vh;
+    height: 4rem;
     z-index: 1;
 
     ul {
@@ -53,7 +54,7 @@ img {
 
     li {
         list-style: none;
-        padding: .8rem 1.5rem;
+        padding: 1rem 1.5rem;
         font-weight: bold;
     }
 
@@ -177,6 +178,35 @@ img {
     // Technical Skills
     &-c {
         background: $light-color;
+        height: 50vh;
+          // Technical Skills
+          .skills {
+            padding: .8rem 3rem;
+
+            h4 {
+                text-align: left;
+            }
+
+            .progress {
+                overflow: hidden;
+                height: 15px;
+                background: $dark-color;
+                border-radius: 5px;
+                margin-bottom: 0.3rem;
+    
+                div {
+                    height: 100%;
+                    color: white;
+                    text-align: center;
+                    background: $main-color;
+                }
+            }
+        }
+    }
+
+    // My Work
+    &-d {
+        background: $medium-color;
         height: 50vh;
           // Technical Skills
           .skills {
