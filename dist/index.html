@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/293b451b5e.js" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/rellax/1.12.1/rellax.min.js"></script>
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="./css/main.css">
     <title>Sam Hoidal | Software Developer, Web Designer, Adventurer</title>
@@ -12,26 +14,28 @@
 <body>
     <!-- Header -->
     <header id="header-home">
-        <div class="container">
-            <nav id="main-nav">
-                <ul>
-                    <li><a href="index.html" class="current">Home</a></li>
-                    <li><a href="#home-a">About</a></li>
-                    <li><a href="index.html">Work</a></li>
-                    <li><a href="index.html">Resume</a></li>
-                    <li><a href="index.html">Contact</a></li>
-                </ul>
-            </nav>
+        <div class="container rellax" data-rellax-speed="-3">
             <div class="header-content">
                 <h1>I AM SAM HOIDAL</h1>
                 <div id="typewriter"></div>
-                <a href="work.html" class="btn-light">View My Work</a>
+                <a href="work.html" class="btn-light">RESUME</a>
             </div>
         </div>
     </header>
 
+    <!-- Nav Bar: Sticky -->
+    <nav class="main-nav">
+        <ul>
+            <li><a href="index.html" id="nav-home" class="current">Home</a></li>
+            <li><a href="#home-a" id="nav-about">About</a></li>
+            <li><a href="index.html" id="nav-work">Work</a></li>
+            <li><a href="index.html" id="nav-photography">Photography</a></li>
+            <li><a href="index.html" id="nav-contact">Contact</a></li>
+        </ul>
+    </nav>
+
     <!-- Section A: About Me -->
-    <section id="home-a" class="text-center py-3">
+    <section id="home-a" class="text-center py-3 content">
         <div class="container">
             <h2 class="section-title">About Me</h2>
             <div class="bottom-line"></div>
@@ -62,17 +66,17 @@
             <h2 class="section-title">I Specialize In</h2>
             <div class="bottom-line"></div>
             <div class="specialties">
-                <div>
+                <div data-aos="fade-right">
                     <i class="fas fa-desktop fa-2x"></i>
                     <h3>UX/UI Design</h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit esse nam recusandae ducimus nemo voluptas, illo alias amet quia inventore libero soluta mollitia quo doloribus ea, fugiat odio, praesentium aliquam consequuntur. Blanditiis magnam placeat excepturi reiciendis modi aliquam, dolorem sapiente atque adipisci recusandae explicabo ratione laudantium aspernatur obcaecati, exercitationem voluptates?</p>
                 </div>
-                <div>
+                <div data-aos="zoom-in">
                     <i class="fas fa-code fa-2x"></i>
                     <h3>Software Development</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum, tempore eos possimus quasi nisi maxime hic quis in amet. Quisquam non voluptas quo, doloribus laborum ratione, voluptates placeat consequuntur minus corrupti numquam eos dolor, repellat sit quia ad nemo. Explicabo accusantium perferendis inventore porro vero illum consequatur tempore unde voluptas.</p>
                 </div>
-                <div>
+                <div data-aos="fade-left">
                     <i class="fas fa-thumbs-up fa-2x"></i>
                     <h3>Interaction</h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero a laboriosam necessitatibus eveniet officia consectetur, suscipit iste provident omnis, consequatur id error asperiores maiores facilis deserunt molestias neque velit deleniti libero numquam architecto non dignissimos facere. Quasi, necessitatibus at, aperiam reprehenderit quibusdam expedita atque mollitia incidunt impedit tenetur similique aut.</p>
@@ -94,31 +98,31 @@
                     </div>
                 </div>
                 <div data-aos="fade-left">
-                    <h4>React</h4>
+                    <h4>React / Redux</h4>
                     <div class="progress">
                         <div style="width:90%"></div>
                     </div>
                 </div>
                 <div data-aos="fade-right">
-                    <h4>React</h4>
+                    <h4>Ruby on Rails</h4>
                     <div class="progress">
-                        <div style="width:90%"></div>
+                        <div style="width:80%"></div>
                     </div>
                 </div>
                 <div data-aos="fade-left">
-                    <h4>React</h4>
+                    <h4>Swift</h4>
                     <div class="progress">
-                        <div style="width:90%"></div>
+                        <div style="width:60%"></div>
                     </div>
                 </div>
                 <div data-aos="fade-right">
-                    <h4>React</h4>
+                    <h4>Java</h4>
                     <div class="progress">
-                        <div style="width:90%"></div>
+                        <div style="width:80%"></div>
                     </div>
                 </div>
                 <div data-aos="fade-left">
-                    <h4>React</h4>
+                    <h4>HTML / CSS</h4>
                     <div class="progress">
                         <div style="width:90%"></div>
                     </div>
@@ -138,21 +142,7 @@
             </div>
         </div>
     </footer>
-
-    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
-    <script type="text/javascript">
-        const instance = new Typewriter("#typewriter", {
-            strings: ["software engineer.", "Web desIgner.", "photographer.", "adventurer."],
-            autoStart: true,
-            loop: true
-      });
-    </script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/rellax/1.12.1/rellax.min.js"></script>
-    <script>
-        const rellax = new Rellax(".rellax");
-    </script>
-    <script>
-        AOS.init();
-    </script>
+    
+    <script src="./js/animations.js"></script>
 </body>
 </html>

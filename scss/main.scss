@@ -32,12 +32,20 @@ img {
     width: 100%;
 }
 
+.fixed-nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
 // Main Nav
-#main-nav {
-    position: sticky;
+.main-nav {
+    overflow: hidden;
     display: flex;
     flex-flow: row-reverse;
-    padding: 1.5rem 1rem;
+    background: $dark-color;
+    height: 8vh;
+    z-index: 1;
 
     ul {
         display: flex;
@@ -45,7 +53,7 @@ img {
 
     li {
         list-style: none;
-        padding: 1rem 1.5rem;
+        padding: .8rem 1.5rem;
         font-weight: bold;
     }
 
@@ -63,7 +71,7 @@ img {
         }
 
         &.current {
-            border-color: $main-color;
+            color: $main-color;
         }
     }
 }
@@ -73,13 +81,13 @@ img {
     // header home
     &-home {
         background: $bg-image no-repeat center left / cover;
-        height: 85vh;
+        height: 92vh;
 
         .header-content {
             color: $medium-color;
             position: relative;
             text-align: center;
-            margin-top: 3.5rem;
+            margin-top: 10rem;
             padding: 4rem;
 
             h1 {
@@ -110,6 +118,7 @@ img {
 #home {
     // About Me
     &-a {
+        padding-top: 10vh;
         background: $light-color;
         height: 75vh;
         .about-info {

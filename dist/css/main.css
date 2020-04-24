@@ -86,18 +86,25 @@ h2, h3, h4 {
 img {
   width: 100%; }
 
-#main-nav {
-  position: sticky;
+.fixed-nav {
+  position: fixed;
+  top: 0;
+  width: 100%; }
+
+.main-nav {
+  overflow: hidden;
   display: flex;
   flex-flow: row-reverse;
-  padding: 1.5rem 1rem; }
-  #main-nav ul {
+  background: #17252a;
+  height: 8vh;
+  z-index: 1; }
+  .main-nav ul {
     display: flex; }
-  #main-nav li {
+  .main-nav li {
     list-style: none;
-    padding: 1rem 1.5rem;
+    padding: .8rem 1.5rem;
     font-weight: bold; }
-  #main-nav a {
+  .main-nav a {
     text-decoration: none;
     font-size: 20px;
     color: #def2f1;
@@ -105,19 +112,19 @@ img {
     border-bottom: 3px transparent solid;
     padding-bottom: 0.5rem;
     transition: border-color 0.5s; }
-    #main-nav a:hover {
+    .main-nav a:hover {
       border-color: #def2f1; }
-    #main-nav a.current {
-      border-color: #3aafa9; }
+    .main-nav a.current {
+      color: #3aafa9; }
 
 #header-home {
   background: url("../img/atacama.jpeg") no-repeat center left/cover;
-  height: 85vh; }
+  height: 92vh; }
   #header-home .header-content {
     color: #def2f1;
     position: relative;
     text-align: center;
-    margin-top: 3.5rem;
+    margin-top: 10rem;
     padding: 4rem; }
     #header-home .header-content h1 {
       text-align: center;
@@ -136,6 +143,7 @@ img {
       text-align: center; }
 
 #home-a {
+  padding-top: 10vh;
   background: #feffff;
   height: 75vh; }
   #home-a .about-info {
