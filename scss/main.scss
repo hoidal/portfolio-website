@@ -150,7 +150,7 @@ img {
     // Specialization
     &-b {
         background: $medium-color;
-        height: 70vh;
+        height: 50vh;
 
         .specialties {
             margin-top: 3rem;
@@ -161,6 +161,35 @@ img {
             .fas {
                 color: $main-color;
                 padding-bottom: 0.4rem;
+            }
+        }
+    }
+
+    // Technical Skills
+    &-c {
+        background: $light-color;
+        height: 50vh;
+          // Technical Skills
+          .skills {
+            padding: .8rem 3rem;
+
+            h4 {
+                text-align: left;
+            }
+
+            .progress {
+                overflow: hidden;
+                height: 15px;
+                background: $dark-color;
+                border-radius: 5px;
+                margin-bottom: 0.3rem;
+    
+                div {
+                    height: 100%;
+                    color: white;
+                    text-align: center;
+                    background: $main-color;
+                }
             }
         }
     }
