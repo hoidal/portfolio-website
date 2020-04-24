@@ -96,7 +96,7 @@ img {
 
 #header-home {
   background-attachment: scroll;
-  background: url("../img/ATACAMA.jpeg") no-repeat center left/cover;
+  background: url("../img/atacama.jpeg") no-repeat center left/cover;
   height: 75vh; }
   #header-home .header-content {
     color: #def2f1;
