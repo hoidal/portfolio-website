@@ -34,6 +34,7 @@ img {
 
 // Main Nav
 #main-nav {
+    position: sticky;
     display: flex;
     flex-flow: row-reverse;
     padding: 1.5rem 1rem;
@@ -71,14 +72,14 @@ img {
 #header {
     // header home
     &-home {
-        background-attachment: scroll;
         background: $bg-image no-repeat center left / cover;
-        height: 75vh;
+        height: 85vh;
 
         .header-content {
             color: $medium-color;
             position: relative;
             text-align: center;
+            margin-top: 3.5rem;
             padding: 4rem;
 
             h1 {
@@ -103,16 +104,93 @@ img {
             }
         }
     }
-    // header inner
-    &-inner {
-
-    }
 }
 
 // Home Sections
 #home {
+    // About Me
     &-a {
         background: $light-color;
         height: 75vh;
+        .about-info {
+            display: grid;
+            grid-template-areas: 
+                'bioimage bio'
+                'social bio'
+                'resume bio';
+            grid-gap: 1.2rem;
+        }
+        // Grid Area
+        .bio-image {
+            height: 20rem;
+            width: auto;
+            grid-area: bioimage;
+        }
+        .bio {
+            background-color: $light-color;
+            grid-area: bio;
+            border-left: 3px solid $main-color;
+            padding: 0.8rem;
+        }
+        .social-media {
+            grid-area: social;
+            display: flex;
+            justify-content: space-evenly;
+            margin: 1rem;
+
+            i {
+                height: 2rem;
+
+                &:hover {
+                    color: $main-color;
+                }
+            }
+        }
+    }
+    // Specialization
+    &-b {
+        background: $medium-color;
+        height: 70vh;
+
+        .specialties {
+            margin-top: 3rem;
+            display: grid;
+            grid-gap: 1rem;
+            grid-template-columns: repeat(3, 1fr);
+
+            .fas {
+                color: $main-color;
+                padding-bottom: 0.4rem;
+            }
+        }
+    }
+}
+
+// Footer
+#main-footer {
+    background: $dark-color;
+    color: $light-color;
+    height: 4rem;
+
+    .footer-content {
+        display: flex;
+        justify-content: space-between;
+        height: 4rem;
+        align-items: center;
+
+        .social .fab {
+            margin-right: 1rem;
+            border: 2px #fff solid;
+            border-radius: 50%;
+            height: 20px;
+            width: 20px;
+            line-height: 20px;
+            text-align: center;
+            padding: 0.5rem;
+
+            &:hover {
+                background: $main-color;
+            }
+        }
     }
 }

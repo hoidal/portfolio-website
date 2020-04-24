@@ -1,57 +1,113 @@
 <!DOCTYPE html>
-<html lang='en'>
+<html lang="en">
 <head>
-    <meta charset='UTF-8'>
-    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
-    <link rel='stylesheet' href='./css/main.css'>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/293b451b5e.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/main.css">
     <title>Sam Hoidal | Software Developer, Web Designer, Adventurer</title>
 </head>
 <body>
     <!-- Header -->
-    <header id='header-home'>
-        <div class='container'>
-                <nav id='main-nav'>
-                    <ul>
-                        <li><a href='index.html' class='current'>Home</a></li>
-                        <li><a href='index.html'>About</a></li>
-                        <li><a href='index.html'>Work</a></li>
-                        <li><a href='index.html'>Resume</a></li>
-                        <li><a href='index.html'>Contact</a></li>
-                    </ul>
-                </nav>
-            </div>
-            <div class='header-content'>
+    <header id="header-home">
+        <div class="container">
+            <nav id="main-nav">
+                <ul>
+                    <li><a href="index.html" class="current">Home</a></li>
+                    <li><a href="index.html">About</a></li>
+                    <li><a href="index.html">Work</a></li>
+                    <li><a href="index.html">Resume</a></li>
+                    <li><a href="index.html">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-content">
                 <h1>I AM SAM HOIDAL</h1>
-                <div id='typewriter'></div>
-                <a href='work.html' class='btn-light'>View My Work</a>
+                <div id="typewriter"></div>
+                <a href="work.html" class="btn-light">View My Work</a>
             </div>
         </div>
     </header>
 
-    <!-- Section A: Specialize -->
-    <section id='home-a' class='text-center py-2 rellax' data-rellax-speed='3'>
+    <!-- Section A: About Me -->
+    <section id="home-a" class="text-center py-3">
         <div class="container">
-            <h2 class="section-title">I Specialize In</h2>
+            <h2 class="section-title">About Me</h2>
             <div class="bottom-line"></div>
-            <p class="lead">
-                Software Development, Web Design, and......
-            </p>
-            <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam odit voluptatem autem! Hic ducimus nostrum quae ut saepe, maiores non facere nobis! Non repudiandae laboriosam perspiciatis mollitia facilis nemo iste recusandae, neque similique dolorum, at ipsum nulla doloribus, totam harum aspernatur eaque ex consequuntur adipisci? Commodi nihil quidem ratione distinctio, veritatis aut rerum, incidunt voluptatibus dolorum qui quam eius odio voluptatum voluptatem sed sunt delectus velit? Optio dolorem fuga itaque, natus consequatur soluta laboriosam impedit architecto temporibus numquam voluptatum nisi quam quae pariatur praesentium incidunt saepe quia nihil quo veritatis dignissimos. Doloremque dolor praesentium consectetur odio, exercitationem rerum animi inventore.</p>
-            <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae corrupti quos veritatis exercitationem nam voluptatibus nesciunt aliquid blanditiis. Beatae, repellendus quibusdam. Illo eveniet voluptates quasi, exercitationem eligendi, quidem quo nesciunt animi repellat vitae molestiae veritatis dolores, sapiente similique ea iste magnam! Vitae impedit perspiciatis, nesciunt quisquam repudiandae facilis beatae minima.</p>
+            <div class="about-info">
+                <img src="./img/bio-photo.jpg" alt="Bio Photo" class="bio-image">
+                <div class="bio bg-light">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis iste perspiciatis ab eos ullam fugit voluptas optio, inventore cumque, sit porro minus dicta reprehenderit quidem. Id maiores cum at culpa vel architecto in illum voluptates quod obcaecati, quasi pariatur eligendi consequuntur aspernatur, iste consequatur dignissimos praesentium tempora cumque mollitia officia.</p>
+                </div>
+                <div class="social-media">
+                    <a href="https://www.facebook.com/hoidal">
+                        <i class="fab fa-facebook fa-3x social-media-btn"></i>
+                    </a>
+                    <a href="https://www.instagram.com/samhoidal/?hl=en">
+                        <i class="fab fa-instagram fa-3x social-media-btn"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/hoidal/">
+                        <i class="fab fa-linkedin fa-3x social-media-btn"></i>
+                    </a>
+                </div>
+                <a id="resume" href="https://drive.google.com/file/d/1_kUT4AfU1mF8A4CUjg98wF-XOtXUGJMS/view?usp=sharing" class="btn-light">Resume</a>
+            </div>
         </div>
     </section>
 
-    <script src='https://unpkg.com/typewriter-effect@latest/dist/core.js'></script>
-    <script type='text/javascript'>
-        const instance = new Typewriter('#typewriter', {
-            strings: ['software engineer.', 'Web desIgner.', 'photographer.', 'P adventurer.'],
+    <!-- Section B: Specialize -->
+    <section id="home-b" class="text-center py-2">
+        <div class="container">
+            <h2 class="section-title">I Specialize In</h2>
+            <div class="bottom-line"></div>
+            <p class="lead">Full Stack Software Development</p>
+            <div class="specialties">
+                <div>
+                    <i class="fas fa-desktop fa-2x"></i>
+                    <h3>UX/UI Design</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit esse nam recusandae ducimus nemo voluptas, illo alias amet quia inventore libero soluta mollitia quo doloribus ea, fugiat odio, praesentium aliquam consequuntur. Blanditiis magnam placeat excepturi reiciendis modi aliquam, dolorem sapiente atque adipisci recusandae explicabo ratione laudantium aspernatur obcaecati, exercitationem voluptates?</p>
+                </div>
+                <div>
+                    <i class="fas fa-code fa-2x"></i>
+                    <h3>Software Development</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum, tempore eos possimus quasi nisi maxime hic quis in amet. Quisquam non voluptas quo, doloribus laborum ratione, voluptates placeat consequuntur minus corrupti numquam eos dolor, repellat sit quia ad nemo. Explicabo accusantium perferendis inventore porro vero illum consequatur tempore unde voluptas.</p>
+                </div>
+                <div>
+                    <i class="fas fa-thumbs-up fa-2x"></i>
+                    <h3>Interaction</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero a laboriosam necessitatibus eveniet officia consectetur, suscipit iste provident omnis, consequatur id error asperiores maiores facilis deserunt molestias neque velit deleniti libero numquam architecto non dignissimos facere. Quasi, necessitatibus at, aperiam reprehenderit quibusdam expedita atque mollitia incidunt impedit tenetur similique aut.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="main-footer">
+        <div class="footer-content container">
+            <p>Copyright &copy; 2020. All Rights Reserved.</p>
+            <div class="social">
+                <i class="fab fa-linkedin"></i>
+                <i class="fab fa-instagram"></i>
+                <i class="fab fa-facebook"></i>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+    <script type="text/javascript">
+        const instance = new Typewriter("#typewriter", {
+            strings: ["software engineer.", "Web desIgner.", "photographer.", "adventurer."],
             autoStart: true,
             loop: true
       });
     </script>
-    <script src='https://cdnjs.cloudflare.com/ajax/libs/rellax/1.12.1/rellax.min.js'></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/rellax/1.12.1/rellax.min.js"></script>
     <script>
-        const rellax = new Rellax('.rellax');
+        const rellax = new Rellax(".rellax");
+    </script>
+    <script>
+        AOS.init();
     </script>
 </body>
 </html>

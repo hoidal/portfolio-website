@@ -48,6 +48,21 @@ input[class^='btn-']:hover {
 .py-4 {
   padding: 4rem 0; }
 
+.section-title {
+  font-size: 1.5rem;
+  display: block;
+  padding-bottom: 0.5rem;
+  text-align: center;
+  font-weight: 100;
+  text-transform: uppercase; }
+
+.bottom-line {
+  height: 2px;
+  width: 3rem;
+  background: #3aafa9;
+  display: block;
+  margin: 0 auto 1rem auto; }
+
 @font-face {
   font-family: Old Growth;
   src: url("../fonts/oldgrowth-regular-webfont.woff"); }
@@ -72,6 +87,7 @@ img {
   width: 100%; }
 
 #main-nav {
+  position: sticky;
   display: flex;
   flex-flow: row-reverse;
   padding: 1.5rem 1rem; }
@@ -95,13 +111,13 @@ img {
       border-color: #3aafa9; }
 
 #header-home {
-  background-attachment: scroll;
   background: url("../img/atacama.jpeg") no-repeat center left/cover;
-  height: 75vh; }
+  height: 85vh; }
   #header-home .header-content {
     color: #def2f1;
     position: relative;
     text-align: center;
+    margin-top: 3.5rem;
     padding: 4rem; }
     #header-home .header-content h1 {
       text-align: center;
@@ -122,3 +138,58 @@ img {
 #home-a {
   background: #feffff;
   height: 75vh; }
+  #home-a .about-info {
+    display: grid;
+    grid-template-areas: 'bioimage bio' 'social bio' 'resume bio';
+    grid-gap: 1.2rem; }
+  #home-a .bio-image {
+    height: 20rem;
+    width: auto;
+    grid-area: bioimage; }
+  #home-a .bio {
+    background-color: #feffff;
+    grid-area: bio;
+    border-left: 3px solid #3aafa9;
+    padding: 0.8rem; }
+  #home-a .social-media {
+    grid-area: social;
+    display: flex;
+    justify-content: space-evenly;
+    margin: 1rem; }
+    #home-a .social-media i {
+      height: 2rem; }
+      #home-a .social-media i:hover {
+        color: #3aafa9; }
+
+#home-b {
+  background: #def2f1;
+  height: 70vh; }
+  #home-b .specialties {
+    margin-top: 3rem;
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: repeat(3, 1fr); }
+    #home-b .specialties .fas {
+      color: #3aafa9;
+      padding-bottom: 0.4rem; }
+
+#main-footer {
+  background: #17252a;
+  color: #feffff;
+  height: 4rem; }
+  #main-footer .footer-content {
+    display: flex;
+    justify-content: space-between;
+    height: 4rem;
+    align-items: center; }
+    #main-footer .footer-content .social .fab {
+      margin-right: 1rem;
+      border: 2px #fff solid;
+      border-radius: 50%;
+      height: 20px;
+      width: 20px;
+      line-height: 20px;
+      text-align: center;
+      padding: 0.5rem; }
+      #main-footer .footer-content .social .fab:hover {
+        background: #3aafa9; }
