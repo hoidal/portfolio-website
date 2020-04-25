@@ -122,7 +122,7 @@ img {
     &-a {
         background: $light-color;
         padding-bottom: 2rem;
-        height: 75vh;
+        height: 85vh;
         .about-info {
             display: grid;
             grid-template-areas: 
@@ -168,6 +168,10 @@ img {
             display: grid;
             grid-gap: 1rem;
             grid-template-columns: repeat(3, 1fr);
+
+            p {
+                overflow: hidden;
+            }
 
             .fas {
                 color: $main-color;
@@ -237,9 +241,14 @@ img {
     // Photography
     &-e {
         background: $dark-color;
+        color: $medium-color;
+        height: 250vh;
+
         .photos {
+            overflow: hidden;
             display: flex;
             flex-flow: row wrap;
+            justify-content: center;
 
             img {
                 width: 30%;

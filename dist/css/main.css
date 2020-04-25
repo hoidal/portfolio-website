@@ -219,7 +219,7 @@ img {
 #home-a {
   background: #feffff;
   padding-bottom: 2rem;
-  height: 75vh; }
+  height: 85vh; }
   #home-a .about-info {
     display: grid;
     grid-template-areas: 'bioimage bio' 'social bio' 'resume bio';
@@ -251,6 +251,8 @@ img {
     display: grid;
     grid-gap: 1rem;
     grid-template-columns: repeat(3, 1fr); }
+    #home-b .specialties p {
+      overflow: hidden; }
     #home-b .specialties .fas {
       color: #3aafa9;
       padding-bottom: 0.4rem; }
@@ -294,10 +296,14 @@ img {
         background: #3aafa9; }
 
 #home-e {
-  background: #17252a; }
+  background: #17252a;
+  color: #def2f1;
+  height: 250vh; }
   #home-e .photos {
+    overflow: hidden;
     display: flex;
-    flex-flow: row wrap; }
+    flex-flow: row wrap;
+    justify-content: center; }
     #home-e .photos img {
       width: 30%;
       align-self: center;
