@@ -242,7 +242,7 @@ img {
     &-e {
         background: $dark-color;
         color: $medium-color;
-        height: 250vh;
+        height: 235vh;
 
         .photos {
             overflow: hidden;
@@ -256,6 +256,57 @@ img {
                 margin: 1rem;
                 margin-top: 0;
             }
+        }
+    }
+
+    // Contact Form
+    &-f {
+        background: $medium-color;
+
+        form {
+            margin: 0 10rem;
+
+            .text-fields {
+                display: grid;
+                grid-template-areas:
+                    'name email'
+                    'subject phone'
+                    'message message';
+                grid-gap: 1.2rem;
+                margin-bottom: 1.2rem;
+    
+                // Grid Areas
+                .name-input {
+                    grid-area: name;
+                }
+                .subject-input {
+                    grid-area: subject;
+                }
+                .email-input {
+                    grid-area: email;
+                }
+                .phone-input {
+                    grid-area: phone;
+                }
+                .message-input {
+                    grid-area: message;
+                    height: 120px;
+                }
+    
+                .text-input {
+                    padding: 0.5rem 1rem;
+                }
+            }
+        }
+        #contact-info {
+            background: $medium-color;
+            margin: 2rem auto;
+            padding-top: 1rem;
+            width: 40vw;
+            display: grid;
+            grid-gap: 1.2rem;
+            grid-template-columns: repeat(3, 1fr);
+            color: $dark-color;
         }
     }
 }
@@ -273,6 +324,7 @@ img {
         align-items: center;
 
         .social .fab {
+            color: $light-color;
             margin-right: 1rem;
             border: 2px #fff solid;
             border-radius: 50%;
@@ -288,3 +340,6 @@ img {
         }
     }
 }
+
+// Import Media Queries
+@import 'media';

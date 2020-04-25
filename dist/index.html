@@ -206,14 +206,52 @@
         </div>
     </section>
 
+    <!-- Section F: Contact Form -->
+    <section id="home-f" class="text-center py-3">
+        <div class="container">
+            <h2 class="section-title">Contact Me</h2>
+            <div class="bottom-line"></div>
+            <form method="POST" data-netfify="true" data-netlify-recaptcha="true">
+                <div class="text-fields">
+                    <input type="text" class="text-input name-input" placeholder="Name" name="name">
+                    <input type="text" class="text-input subject-input" placeholder="Subject" name="subject">
+                    <input type="email" class="text-input email-input" placeholder="Email Address" name="email">
+                    <input type="text" class="text-input phone-input" placeholder="Phone Number" name="phone">
+                    <textarea class="text-input message-input" placeholder="Enter Message" name="message"></textarea>
+                    <div class="my-2">
+                        <div data-netlify-recaptcha="true"></div>
+                    </div>
+                </div>
+                <button type="submit" class="btn-dark">Submit</button>
+            </form>
+        </div>
+        <div id="contact-info">
+            <div>
+                <i class="fas fa-envelope fa-2x"></i>
+                <h3>Email</h3>
+                <a href="mailto:sjhoidal@gmail.com"><p>sjhoidal@gmail.com</p></a>
+            </div>
+            <div>
+                <i class="fas fa-phone fa-2x"></i>
+                <h3>Phone</h3>
+                <a href="tel:1-303-588-0769"><p>+1-303-588-0769</p></a>
+            </div>
+            <div>
+                <i class="fas fa-address-card fa-2x"></i>
+                <h3>Address</h3>
+                <p>Denver, CO, USA</p>
+            </div>
+        </div>
+    </section>
+
     <!-- Footer -->
     <footer id="main-footer">
         <div class="footer-content container">
             <p>Copyright &copy; 2020. All Rights Reserved.</p>
             <div class="social">
-                <i class="fab fa-linkedin"></i>
-                <i class="fab fa-instagram"></i>
-                <i class="fab fa-facebook"></i>
+                <a href="https://www.linkedin.com/in/hoidal/"><i class="fab fa-linkedin"></i></a>
+                <a href="https://www.instagram.com/samhoidal/?hl=en"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.facebook.com/hoidal"><i class="fab fa-facebook"></i></a>
             </div>
         </div>
     </footer>

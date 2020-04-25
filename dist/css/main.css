@@ -298,7 +298,7 @@ img {
 #home-e {
   background: #17252a;
   color: #def2f1;
-  height: 250vh; }
+  height: 235vh; }
   #home-e .photos {
     overflow: hidden;
     display: flex;
@@ -310,6 +310,38 @@ img {
       margin: 1rem;
       margin-top: 0; }
 
+#home-f {
+  background: #def2f1; }
+  #home-f form {
+    margin: 0 10rem; }
+    #home-f form .text-fields {
+      display: grid;
+      grid-template-areas: 'name email' 'subject phone' 'message message';
+      grid-gap: 1.2rem;
+      margin-bottom: 1.2rem; }
+      #home-f form .text-fields .name-input {
+        grid-area: name; }
+      #home-f form .text-fields .subject-input {
+        grid-area: subject; }
+      #home-f form .text-fields .email-input {
+        grid-area: email; }
+      #home-f form .text-fields .phone-input {
+        grid-area: phone; }
+      #home-f form .text-fields .message-input {
+        grid-area: message;
+        height: 120px; }
+      #home-f form .text-fields .text-input {
+        padding: 0.5rem 1rem; }
+  #home-f #contact-info {
+    background: #def2f1;
+    margin: 2rem auto;
+    padding-top: 1rem;
+    width: 40vw;
+    display: grid;
+    grid-gap: 1.2rem;
+    grid-template-columns: repeat(3, 1fr);
+    color: #17252a; }
+
 #main-footer {
   background: #17252a;
   color: #feffff;
@@ -320,6 +352,7 @@ img {
     height: 4rem;
     align-items: center; }
     #main-footer .footer-content .social .fab {
+      color: #feffff;
       margin-right: 1rem;
       border: 2px #fff solid;
       border-radius: 50%;
@@ -330,3 +363,27 @@ img {
       padding: 0.5rem; }
       #main-footer .footer-content .social .fab:hover {
         background: #3aafa9; }
+
+@media (max-width: 800px) {
+  #header-home {
+    height: 30rem; }
+    #header-home .header-content {
+      padding-top: 0; }
+  .main-nav ul {
+    margin: 0 auto; }
+  #home-f form {
+    margin: 0 auto;
+    width: 70vw; }
+  #home-f #contact-info {
+    width: 70vw; } }
+
+@media (max-width: 500px) {
+  .main-nav {
+    display: none; }
+  #header-home {
+    height: 10rem;
+    border-bottom: 3px solid #3aafa9; }
+    #header-home .header-content {
+      display: none; }
+  #home-a {
+    padding: 1rem; } }

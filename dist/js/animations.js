@@ -66,7 +66,7 @@ const showCurrentPage = () => {
         navPhotography.className = "current";
         navWork.className = "";
         navContact.className = "";
-    }
+    } 
 }
 
 
