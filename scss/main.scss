@@ -46,10 +46,11 @@ img {
     flex-flow: row-reverse;
     background: $dark-color;
     height: 4rem;
-    z-index: 1;
+    z-index: 100;
 
     ul {
         display: flex;
+        margin-right: 4rem;
     }
 
     li {
@@ -119,8 +120,8 @@ img {
 #home {
     // About Me
     &-a {
-        padding-top: 10vh;
         background: $light-color;
+        padding-bottom: 2rem;
         height: 75vh;
         .about-info {
             display: grid;
@@ -207,7 +208,7 @@ img {
     // My Work
     &-d {
         background: $medium-color;
-        height: 50vh;
+        height: 60vh;
           // Technical Skills
           .skills {
             padding: .8rem 3rem;
@@ -230,6 +231,13 @@ img {
                     background: $main-color;
                 }
             }
+        }
+    }
+
+    // Photography
+    &-e {
+        .photo {
+            width: 30rem;
         }
     }
 }

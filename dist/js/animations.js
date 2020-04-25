@@ -27,10 +27,10 @@ const topOfNav = navBar.offsetTop;
 const fixNav = () => {
     if(window.pageYOffset >= topOfNav) {
         navBar.classList.add("fixed-nav");
-        nextSection.style.paddingTop = "7rem";
+        nextSection.style.paddingTop = "8rem";
     } else {
         navBar.classList.remove("fixed-nav");
-        nextSection.style.paddingTop = "3rem";
+        nextSection.style.paddingTop = "4rem";
     }
 }
 

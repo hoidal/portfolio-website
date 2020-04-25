@@ -170,9 +170,10 @@ img {
   flex-flow: row-reverse;
   background: #17252a;
   height: 4rem;
-  z-index: 1; }
+  z-index: 100; }
   .main-nav ul {
-    display: flex; }
+    display: flex;
+    margin-right: 4rem; }
   .main-nav li {
     list-style: none;
     padding: 1rem 1.5rem;
@@ -216,8 +217,8 @@ img {
       text-align: center; }
 
 #home-a {
-  padding-top: 10vh;
   background: #feffff;
+  padding-bottom: 2rem;
   height: 75vh; }
   #home-a .about-info {
     display: grid;
@@ -275,7 +276,7 @@ img {
 
 #home-d {
   background: #def2f1;
-  height: 50vh; }
+  height: 60vh; }
   #home-d .skills {
     padding: .8rem 3rem; }
     #home-d .skills h4 {
@@ -291,6 +292,9 @@ img {
         color: white;
         text-align: center;
         background: #3aafa9; }
+
+#home-e .photo {
+  width: 30rem; }
 
 #main-footer {
   background: #17252a;
