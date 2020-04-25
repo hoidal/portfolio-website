@@ -49,24 +49,29 @@ const workSection = document.querySelector("#home-d");
 const workTop = workSection.offsetTop;
 const photographySection = document.querySelector("#home-e")
 const photographyTop = photographySection.offsetTop;
+const contactSection = document.querySelector("#home-f");
+const contactTop = contactSection.offsetTop;
 
 const showCurrentPage = () => {
-    if(pageYOffset < (aboutMeTop - 200)) {
+    if(pageYOffset < (aboutMeTop - 300)) {
         navAbout.className = "";
         navHome.className = "current";
-    } else if((pageYOffset >= aboutMeTop - 200) && (pageYOffset <= workTop - 200)) {
+    } else if((pageYOffset >= aboutMeTop - 300) && (pageYOffset <= workTop - 300)) {
         navAbout.className = "current";
         navHome.className = "";
         navWork.className = "";
-    } else if((pageYOffset >= workTop - 200) && (pageYOffset <= photographyTop - 200)) {
+    } else if((pageYOffset >= workTop - 300) && (pageYOffset <= photographyTop - 300)) {
         navWork.className = "current";
         navAbout.className = "";
         navPhotography.className = "";
-    } else if(pageYOffset >= photographyTop - 200) {
+    } else if((pageYOffset >= photographyTop) - 300 && (pageYOffset <= contactTop - 300)) {
         navPhotography.className = "current";
         navWork.className = "";
         navContact.className = "";
-    } 
+    } else if((pageYOffset >= contactTop -300)) {
+        navContact.className = "current";
+        navPhotography.className = "";
+    }
 }
 
 
