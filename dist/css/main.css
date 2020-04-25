@@ -293,8 +293,16 @@ img {
         text-align: center;
         background: #3aafa9; }
 
-#home-e .photo {
-  width: 30rem; }
+#home-e {
+  background: #17252a; }
+  #home-e .photos {
+    display: flex;
+    flex-flow: row wrap; }
+    #home-e .photos img {
+      width: 30%;
+      align-self: center;
+      margin: 1rem;
+      margin-top: 0; }
 
 #main-footer {
   background: #17252a;

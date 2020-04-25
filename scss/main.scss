@@ -236,8 +236,17 @@ img {
 
     // Photography
     &-e {
-        .photo {
-            width: 30rem;
+        background: $dark-color;
+        .photos {
+            display: flex;
+            flex-flow: row wrap;
+
+            img {
+                width: 30%;
+                align-self: center;
+                margin: 1rem;
+                margin-top: 0;
+            }
         }
     }
 }
