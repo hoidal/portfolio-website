@@ -269,8 +269,8 @@ img {
             .text-fields {
                 display: grid;
                 grid-template-areas:
-                    'name email'
-                    'subject phone'
+                    'name subject'
+                    'email phone'
                     'message message';
                 grid-gap: 1.2rem;
                 margin-bottom: 1.2rem;

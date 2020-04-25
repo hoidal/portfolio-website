@@ -316,7 +316,7 @@ img {
     margin: 0 10rem; }
     #home-f form .text-fields {
       display: grid;
-      grid-template-areas: 'name email' 'subject phone' 'message message';
+      grid-template-areas: 'name subject' 'email phone' 'message message';
       grid-gap: 1.2rem;
       margin-bottom: 1.2rem; }
       #home-f form .text-fields .name-input {
