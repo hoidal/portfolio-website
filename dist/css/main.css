@@ -333,7 +333,9 @@ img {
       #home-f form .text-fields .text-input {
         padding: 0.5rem 1rem; }
     #home-f form .recaptcha {
-      margin: 2rem 0; }
+      margin: 2rem 0;
+      display: flex;
+      justify-content: center; }
   #home-f #contact-info {
     background: #def2f1;
     margin: 2rem auto;
