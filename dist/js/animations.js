@@ -45,14 +45,27 @@ const navContact = document.querySelector("#nav-contact");
 //Sections
 const aboutMe = document.querySelector("#home-a");
 const aboutMeTop = aboutMe.offsetTop;
+const workSection = document.querySelector("#home-d");
+const workTop = workSection.offsetTop;
+const photographySection = document.querySelector("#home-e")
+const photographyTop = photographySection.offsetTop;
 
 const showCurrentPage = () => {
-    if(pageYOffset < aboutMeTop / 2) {
+    if(pageYOffset < (aboutMeTop - 200)) {
         navAbout.className = "";
         navHome.className = "current";
-    } else if(pageYOffset >= aboutMeTop / 2) {
-        navHome.className = "";
+    } else if((pageYOffset >= aboutMeTop - 200) && (pageYOffset <= workTop - 200)) {
         navAbout.className = "current";
+        navHome.className = "";
+        navWork.className = "";
+    } else if((pageYOffset >= workTop - 200) && (pageYOffset <= photographyTop - 200)) {
+        navWork.className = "current";
+        navAbout.className = "";
+        navPhotography.className = "";
+    } else if(pageYOffset >= photographyTop - 200) {
+        navPhotography.className = "current";
+        navWork.className = "";
+        navContact.className = "";
     }
 }
 
