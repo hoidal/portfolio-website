@@ -229,10 +229,13 @@ img {
     width: auto;
     grid-area: bioimage; }
   #home-a .bio {
-    background-color: #feffff;
+    background-color: #def2f1;
     grid-area: bio;
     border-left: 3px solid #3aafa9;
-    padding: 0.8rem; }
+    padding: 0.8rem;
+    text-align: left; }
+    #home-a .bio p {
+      font-size: 14px; }
   #home-a .social-media {
     grid-area: social;
     display: flex;

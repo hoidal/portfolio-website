@@ -1,6 +1,6 @@
 // Typewriter effect
 const instance = new Typewriter("#typewriter", {
-    strings: ["software engineer.", "Web desIgner.", "photographer.", "adventurer."],
+    strings: ["software devloper.", "Web desIgner.", "photographer.", "adventurer."],
     autoStart: true,
     loop: true
 });

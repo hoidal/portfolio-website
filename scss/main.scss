@@ -138,10 +138,15 @@ img {
             grid-area: bioimage;
         }
         .bio {
-            background-color: $light-color;
+            background-color: $medium-color;
             grid-area: bio;
             border-left: 3px solid $main-color;
             padding: 0.8rem;
+            text-align: left;
+
+            p {
+                font-size: 14px;
+            }
         }
         .social-media {
             grid-area: social;
