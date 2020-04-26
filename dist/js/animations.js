@@ -55,22 +55,34 @@ const contactTop = contactSection.offsetTop;
 const showCurrentPage = () => {
     if(pageYOffset < (aboutMeTop - 300)) {
         navAbout.className = "";
+        navWork.className = "";
+        navPhotography.className = "";
+        navContact.className = "";
         navHome.className = "current";
     } else if((pageYOffset >= aboutMeTop - 300) && (pageYOffset <= workTop - 300)) {
         navAbout.className = "current";
+        navPhotography.className = "";
+        navContact.className = "";
         navHome.className = "";
         navWork.className = "";
     } else if((pageYOffset >= workTop - 300) && (pageYOffset <= photographyTop - 300)) {
         navWork.className = "current";
         navAbout.className = "";
         navPhotography.className = "";
+        navContact.className = "";
+        navHome.className = "";
     } else if((pageYOffset >= photographyTop) - 300 && (pageYOffset <= contactTop - 300)) {
         navPhotography.className = "current";
         navWork.className = "";
         navContact.className = "";
+        navAbout.className = "";
+        navHome.className = "";
     } else if((pageYOffset >= contactTop -300)) {
         navContact.className = "current";
         navPhotography.className = "";
+        navHome.className = "";
+        navAbout.className = "";
+        navWork.className = "";
     }
 }
 
