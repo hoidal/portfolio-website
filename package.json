@@ -12,6 +12,15 @@
     "node-sass": "^4.14.0"
   },
   "dependencies": {
-    "typewriter-effect": "^2.13.0"
-  }
+    "typewriter-effect": "^2.13.0",
+    "uglify-js": "^3.9.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hoidal/portfolio-website.git"
+  },
+  "bugs": {
+    "url": "https://github.com/hoidal/portfolio-website/issues"
+  },
+  "homepage": "https://github.com/hoidal/portfolio-website#readme"
 }
