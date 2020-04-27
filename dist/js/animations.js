@@ -9,7 +9,7 @@ const instance = new Typewriter("#typewriter", {
 const rellax = new Rellax(".rellax");
 
 // scrolling fade/zoom in effect
-AOS.init();
+AOS.init({disable: 'mobile'});
 
 // Sticky and Current Nav Bar
 window.onscroll = () => updateNavBar();

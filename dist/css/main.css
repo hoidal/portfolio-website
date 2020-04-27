@@ -395,18 +395,24 @@ img {
       #header-home .main-nav ul {
         align-items: center;
         flex-flow: row wrap; }
+        #header-home .main-nav ul #home-li {
+          display: none; }
         #header-home .main-nav ul li {
           padding: .3rem; }
           #header-home .main-nav ul li a {
             font-size: 13px; }
   #home-a {
     padding: 1rem; }
+    #home-a .container {
+      padding: 0; }
     #home-a .about-info {
       align-items: center; }
     #home-a .social-media i {
       margin: .3rem; }
     #home-a .bio {
-      margin: 1rem 0; }
+      margin: 1rem 0;
+      padding: .5rem;
+      border: none; }
   #home-b {
     padding: 1rem; }
     #home-b .specialties {

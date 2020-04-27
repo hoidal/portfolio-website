@@ -46,7 +46,9 @@
                 ul {
                     align-items: center;
                     flex-flow: row wrap;
-
+                    #home-li {
+                        display: none;
+                    }
                     li {
                         padding: .3rem;
                         a {
@@ -61,6 +63,9 @@
     // about me
     #home-a {
         padding: 1rem;
+        .container {
+            padding: 0;
+        }
         .about-info {
             align-items: center;
         }
@@ -71,6 +76,8 @@
         }
         .bio {
             margin: 1rem 0;
+            padding: .5rem;
+            border: none;
         }
     }
 
