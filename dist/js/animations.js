@@ -27,10 +27,8 @@ const topOfNav = navBar.offsetTop;
 const fixNav = () => {
     if(window.pageYOffset >= topOfNav) {
         navBar.classList.add("fixed-nav");
-        nextSection.style.paddingTop = "8rem";
     } else {
         navBar.classList.remove("fixed-nav");
-        nextSection.style.paddingTop = "4rem";
     }
 }
 
@@ -53,31 +51,32 @@ const contactSection = document.querySelector("#home-f");
 const contactTop = contactSection.offsetTop;
 
 const showCurrentPage = () => {
-    if(pageYOffset < (aboutMeTop - 300)) {
+    const halfView = (document.documentElement.clientHeight / 2);
+    if(pageYOffset < (aboutMeTop - halfView)) {
         navAbout.className = "";
         navWork.className = "";
         navPhotography.className = "";
         navContact.className = "";
         navHome.className = "current";
-    } else if((pageYOffset >= aboutMeTop - 300) && (pageYOffset <= workTop - 300)) {
+    } else if((pageYOffset >= aboutMeTop - halfView) && (pageYOffset <= workTop - halfView)) {
         navAbout.className = "current";
         navPhotography.className = "";
         navContact.className = "";
         navHome.className = "";
         navWork.className = "";
-    } else if((pageYOffset >= workTop - 300) && (pageYOffset <= photographyTop - 300)) {
+    } else if((pageYOffset >= workTop - halfView) && (pageYOffset <= photographyTop - halfView)) {
         navWork.className = "current";
         navAbout.className = "";
         navPhotography.className = "";
         navContact.className = "";
         navHome.className = "";
-    } else if((pageYOffset >= photographyTop) - 300 && (pageYOffset <= contactTop - 300)) {
+    } else if((pageYOffset >= photographyTop - halfView) && (pageYOffset <= contactTop - halfView)) {
         navPhotography.className = "current";
         navWork.className = "";
         navContact.className = "";
         navAbout.className = "";
         navHome.className = "";
-    } else if((pageYOffset >= contactTop -300)) {
+    } else if((pageYOffset >=  contactTop - halfView)) {
         navContact.className = "current";
         navPhotography.className = "";
         navHome.className = "";

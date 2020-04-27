@@ -8,39 +8,55 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/rellax/1.12.1/rellax.min.js"></script>
     <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <link rel="stylesheet" href="./css/main.min.css">
+    <link rel="stylesheet" href="./css/main.css">
     <title>Sam Hoidal | Software Developer and Adventurer</title>
 </head>
 <body>
     <!-- Header -->
     <header id="header-home">
-        <div class="container rellax" data-rellax-speed="-4">
+        <div class="container rellax" data-rellax-speed="-2">
             <div class="header-content">
                 <h1>I AM SAM HOIDAL</h1>
                 <div id="typewriter"></div>
                 <a href="https://drive.google.com/file/d/1GR34dcKHRG__DaaerQLK3PRAqZJTFzyz/view?usp=sharing" class="btn-light">RESUME</a>
             </div>
         </div>
+        <!-- Nav Bar -->
+        <nav class="main-nav">
+            <ul>
+                <li><a href="#header-home" id="nav-home" class="current">Home</a></li>
+                <li><a href="#home-a" id="nav-about">About</a></li>
+                <li><a href="#home-d" id="nav-work">Work</a></li>
+                <li><a href="#home-e" id="nav-photography">Photography</a></li>
+                <li><a href="#home-f" id="nav-contact">Contact</a></li>
+            </ul>
+        </nav>
     </header>
 
-    <!-- Nav Bar: Sticky -->
-    <nav class="main-nav">
-        <ul>
-            <li><a href="index.html" id="nav-home" class="current">Home</a></li>
-            <li><a href="#home-a" id="nav-about">About</a></li>
-            <li><a href="#home-d" id="nav-work">Work</a></li>
-            <li><a href="#home-e" id="nav-photography">Photography</a></li>
-            <li><a href="#home-f" id="nav-contact">Contact</a></li>
-        </ul>
-    </nav>
-
     <!-- Section A: About Me -->
-    <section id="home-a" class="text-center">
+    <section id="home-a" class="text-center py-4">
         <div class="container">
             <h2 class="section-title">About Me</h2>
             <div class="bottom-line"></div>
             <div class="about-info">
-                <img src="./img/bio-photo.png" alt="Bio Photo" class="bio-image" loading="lazy">
+                <div>
+                    <img src="./img/bio-photo.png" alt="Bio Photo" class="bio-image" loading="lazy">
+                    <div class="social-media">
+                        <a href="https://www.github.com/hoidal">
+                            <i class="fab fa-github fa-3x social-media-btn"></i>
+                        </a>
+                        <a href="https://www.facebook.com/hoidal">
+                            <i class="fab fa-facebook fa-3x social-media-btn"></i>
+                        </a>
+                        <a href="https://www.instagram.com/samhoidal/?hl=en">
+                            <i class="fab fa-instagram fa-3x social-media-btn"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/hoidal/">
+                            <i class="fab fa-linkedin fa-3x social-media-btn"></i>
+                        </a>
+                    </div>
+                    <a id="resume" href="https://drive.google.com/file/d/1GR34dcKHRG__DaaerQLK3PRAqZJTFzyz/view?usp=sharing" class="btn-dark">Resume</a>
+                </div>
                 <div class="bio bg-light">
                     <p>Hello and thank you for visiting my website! I am Sam Hoidal. I am a software developer, business enthusiast, and passionate adventurer.</p><br>
                     <p>I love solving problems via technology. Whether developing an intuitive and engaging frontend experience or solving complex architectural problems on the backend, I am constantly seeking ways to improve the world around us through scalable innovation.</p><br>
@@ -49,21 +65,6 @@
                     <p>I look forward to connecting!</p>
                     </p>
                 </div>
-                <div class="social-media">
-                    <a href="https://www.github.com/hoidal">
-                        <i class="fab fa-github fa-3x social-media-btn"></i>
-                    </a>
-                    <a href="https://www.facebook.com/hoidal">
-                        <i class="fab fa-facebook fa-3x social-media-btn"></i>
-                    </a>
-                    <a href="https://www.instagram.com/samhoidal/?hl=en">
-                        <i class="fab fa-instagram fa-3x social-media-btn"></i>
-                    </a>
-                    <a href="https://www.linkedin.com/in/hoidal/">
-                        <i class="fab fa-linkedin fa-3x social-media-btn"></i>
-                    </a>
-                </div>
-                <a id="resume" href="https://drive.google.com/file/d/1GR34dcKHRG__DaaerQLK3PRAqZJTFzyz/view?usp=sharing" class="btn-dark">Resume</a>
             </div>
         </div>
     </section>
@@ -194,29 +195,59 @@
             <h2 class="section-title">Photography</h2>
             <div class="bottom-line"></div>
                 <div class="photos">
-                    <img src="./img/photography/the-titan.min.jpeg" alt="The Titan" loading="lazy">
-                    <img src="./img/photography/direct-east-buttress.min.jpeg" alt="Direct East Buttress" loading="lazy">
-                    <img src="./img/photography/honeymoon-chimney.min.jpeg" alt="Honeymoon Chimney" loading="lazy">
-                    <img src="./img/photography/galapagos.min.jpeg" alt="Galapagos" loading="lazy">
-                    <img src="./img/photography/fitz-roy.min.jpeg" alt="Fitz Roy Massif" loading="lazy">
-                    <img src="./img/photography/rainier.min.jpeg" alt="Mt. Rainier" loading="lazy">
-                    <img src="./img/photography/uru-ladies.min.jpeg" alt="Uru Ladies" loading="lazy">
-                    <img src="./img/photography/puerto-varas.min.jpeg" alt="Puerto Varas" loading="lazy">
-                    <img src="./img/photography/laguna-69.min.jpeg" alt="Laguna 69" loading="lazy">
-                    <img src="./img/photography/quilotoa.min.jpeg" alt="Volcan Quilotoa" loading="lazy">
-                    <img src="./img/photography/arequipa-arches.min.jpeg" alt="Arequipa Arches" loading="lazy">
-                    <img src="./img/photography/cuernos-del-horno.min.jpeg" alt="Cuernos del Horno" loading="lazy">
-                    <img src="./img/photography/liberty-bell.min.jpeg" alt="Liberty Bell Group" loading="lazy">
-                    <img src="./img/photography/cochamo.min.jpeg" alt="Cochamo" loading="lazy">
-                    <img src="./img/photography/amantani.min.jpeg" alt="Amantani Island" loading="lazy">
+                    <div class="tall">
+                        <img src="./img/photography/the-titan.min.jpeg" alt="The Titan" loading="lazy">
+                    </div>
+                    <div class="tall">
+                        <img src="./img/photography/direct-east-buttress.min.jpeg" alt="Direct East Buttress" loading="lazy">
+                    </div>
+                    <div class="tall">
+                        <img src="./img/photography/honeymoon-chimney.min.jpeg" alt="Honeymoon Chimney" loading="lazy">
+                    </div>
+                    <div class="short">
+                        <img src="./img/photography/galapagos.min.jpeg" alt="Galapagos" loading="lazy">
+                    </div>
+                    <div class="short">
+                        <img src="./img/photography/fitz-roy.min.jpeg" alt="Fitz Roy Massif" loading="lazy">
+                    </div>
+                    <div class="short">
+                        <img src="./img/photography/rainier.min.jpeg" alt="Mt. Rainier" loading="lazy">
+                    </div>
+                    <div class="short">
+                        <img src="./img/photography/uru-ladies.min.jpeg" alt="Uru Ladies" loading="lazy">
+                    </div>
+                    <div class="short">
+                        <img src="./img/photography/puerto-varas.min.jpeg" alt="Puerto Varas" loading="lazy">
+                    </div>
+                    <div class="short">
+                        <img src="./img/photography/laguna-69.min.jpeg" alt="Laguna 69" loading="lazy">
+                    </div>
+                    <div class="short">
+                        <img src="./img/photography/quilotoa.min.jpeg" alt="Volcan Quilotoa" loading="lazy">
+                    </div>
+                    <div class="short">
+                        <img src="./img/photography/arequipa-arches.min.jpeg" alt="Arequipa Arches" loading="lazy">
+                    </div>
+                    <div class="short">
+                        <img src="./img/photography/cuernos-del-horno.min.jpeg" alt="Cuernos del Horno" loading="lazy">
+                    </div>
+                    <div class="short">
+                        <img src="./img/photography/liberty-bell.min.jpeg" alt="Liberty Bell Group" loading="lazy">
+                    </div>
+                    <div class="short">
+                        <img src="./img/photography/cochamo.min.jpeg" alt="Cochamo" loading="lazy">
+                    </div>
+                    <div class="short">
+                        <img src="./img/photography/amantani.min.jpeg" alt="Amantani Island" loading="lazy">
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Section F: Contact Form -->
-    <section id="home-f" class="text-center py-3">
-        <div class="container">
+    <section id="home-f" class="text-center py-4">
+        <div class="container contact-page">
             <h2 class="section-title">Contact Me</h2>
             <div class="bottom-line"></div>
             <form name="contact" method="POST" data-netlify="true" data-netlify-recaptcha="true">
@@ -234,28 +265,18 @@
             </form>
         </div>
         <div id="contact-info">
-            <div>
-                <i class="fas fa-envelope fa-2x"></i>
-                <h3>Email</h3>
-                <a href="mailto:sjhoidal@gmail.com"><p>sjhoidal@gmail.com</p></a>
-            </div>
-            <div>
-                <i class="fas fa-phone fa-2x"></i>
-                <h3>Phone</h3>
-                <a href="tel:1-303-588-0769"><p>+1-303-588-0769</p></a>
-            </div>
-            <div>
-                <i class="fas fa-address-card fa-2x"></i>
-                <h3>Address</h3>
-                <p>Denver, CO, USA</p>
-            </div>
+            <i class="fas fa-address-card fa-2x"></i>
+            <h4>Sam Hoidal</h4>
+            <h4><a href="mailto:sjhoidal@gmail.com"><p>sjhoidal@gmail.com</p></a></h4>
+            <h4><a href="tel:1-303-588-0769"><p>+1-303-588-0769</p></a></h4>
+            <h4>Denver, Colorado</h4>
         </div>
     </section>
 
     <!-- Footer -->
     <footer id="main-footer">
         <div class="footer-content container">
-            <p>Copyright &copy; 2020. All Rights Reserved.</p>
+            <p>Copyright &copy; 2020.</p>
             <div class="social">
                 <a href="https://www.github.com/hoidal"><i class="fab fa-github"></i></a>
                 <a href="https://www.linkedin.com/in/hoidal/"><i class="fab fa-linkedin"></i></a>
@@ -265,7 +286,7 @@
         </div>
     </footer>
 
-    <!-- <script src="./js/animations.js"></script> -->
-    <script src="./js/animations.min.js"></script>
+    <script src="./js/animations.js"></script>
+    <!-- <script src="./js/animations.min.js"></script> -->
 </body>
 </html>
