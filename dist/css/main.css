@@ -165,7 +165,7 @@ img {
   width: 100%; }
 
 #header-home {
-  background: url("../img/atacama.jpeg") no-repeat center left/cover;
+  background: url("../img/atacama-min.jpeg") no-repeat center left/cover;
   height: 100vh;
   display: flex;
   flex-direction: column; }
