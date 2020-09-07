@@ -1,360 +1,359 @@
-@import 'config';
-@import 'utilities';
-@import 'item_grid';
+@import "config";
+@import "utilities";
+@import "item_grid";
 
-@import url('https://fonts.googleapis.com/css?family=Montserrat|Oswald&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Montserrat|Oswald&display=swap");
 
 @font-face {
-    font-family: Old Growth;
-    src: url('../fonts/oldgrowth-regular-webfont.woff');
+  font-family: Old Growth;
+  src: url("../fonts/oldgrowth-regular-webfont.woff");
 }
 
 * {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 body {
-    font-family: 'Montserrat', sans-serif;
-    line-height: 1.6;
-    background: $light-color;
+  font-family: "Montserrat", sans-serif;
+  line-height: 1.6;
+  background: $light-color;
 }
 
 a {
-    text-decoration: none;
-    color: $dark-color;
+  text-decoration: none;
+  color: $dark-color;
 }
 
-h2, h3, h4 {
-    text-transform: uppercase;
+h2,
+h3,
+h4 {
+  text-transform: uppercase;
 }
 
 img {
-    width: 100%;
+  width: 100%;
 }
 
 .fixed-nav {
-    position: fixed;
-    top: 0;
-    width: 100%;
+  position: fixed;
+  top: 0;
+  width: 100%;
 }
-
 
 // Header
 #header {
-    // header home
-    &-home {
-        background: $bg-image no-repeat center left / cover;
-        height: 100vh;
-        display: flex;
-        flex-direction: column;
+  // header home
+  &-home {
+    background: $bg-image no-repeat center left / cover;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
 
-        .header-content {
-            color: $medium-color;
-            text-align: center;
-            padding: 4rem;
+    .header-content {
+      color: $medium-color;
+      text-align: center;
+      padding: 4rem;
 
-            h1 {
-                text-align: center;
-                font-family: 'Oswald', sans-serif;
-                font-size: 2rem;
-                font-weight: lighter;
-                line-height: 1.2;
-                padding-bottom: 1.5rem;
-            }
+      h1 {
+        text-align: center;
+        font-family: "Oswald", sans-serif;
+        font-size: 2rem;
+        font-weight: lighter;
+        line-height: 1.2;
+        padding-bottom: 1.5rem;
+      }
 
-            #typewriter {
-                font-family: Old Growth, 'Oswald';
-                font-size: 2rem;
-                padding-bottom: 1.5rem;
-                color: $main-dark-color;
-                font-weight: bold;
-            }
+      #typewriter {
+        font-family: Old Growth, "Oswald";
+        font-size: 2rem;
+        padding-bottom: 1.5rem;
+        color: $main-dark-color;
+        font-weight: bold;
+      }
 
-            .btn-light {
-                text-align: center;
-            }
-        }
-        // Main Nav
-        .main-nav {
-            width: 100vw;
-            align-self: flex-end;
-            overflow: hidden;
-            display: flex;
-            flex-flow: row-reverse;
-            background: $dark-color;
-            height: 4rem;
-            z-index: 100;
-
-            ul {
-                display: flex;
-                margin-right: 4rem;
-            }
-
-            li {
-                list-style: none;
-                padding: 1rem 1.5rem;
-                font-weight: bold;
-            }
-
-            a {
-                text-decoration: none;
-                font-size: 20px;
-                color: $medium-color;
-                text-transform: uppercase;
-                border-bottom: 3px transparent solid;
-                padding-bottom: 0.5rem;
-                transition: border-color 0.5s;
-
-                &:hover {
-                    border-color: $medium-color;
-                }
-
-                &.current {
-                    color: $main-color;
-                }
-            }
-        }
+      .btn-light {
+        text-align: center;
+      }
     }
+    // Main Nav
+    .main-nav {
+      width: 100vw;
+      align-self: flex-end;
+      overflow: hidden;
+      display: flex;
+      flex-flow: row-reverse;
+      background: $dark-color;
+      height: 4rem;
+      z-index: 100;
+
+      ul {
+        display: flex;
+        margin-right: 4rem;
+      }
+
+      li {
+        list-style: none;
+        padding: 1rem 1.5rem;
+        font-weight: bold;
+      }
+
+      a {
+        text-decoration: none;
+        font-size: 20px;
+        color: $medium-color;
+        text-transform: uppercase;
+        border-bottom: 3px transparent solid;
+        padding-bottom: 0.5rem;
+        transition: border-color 0.5s;
+
+        &:hover {
+          border-color: $medium-color;
+        }
+
+        &.current {
+          color: $main-color;
+        }
+      }
+    }
+  }
 }
 
 // Home Sections
 #home {
-    // About Me
-    &-a {
-        background: $light-color;
+  // About Me
+  &-a {
+    background: $light-color;
 
-        .about-info {
-            display: flex;
-        }
-        // Grid Area
-        .bio-image {
-            margin: 1rem;
-            height: 20rem;
-            width: auto;
-        }
-        .bio {
-            background-color: $medium-color;
-            margin: 1rem;
-            border-left: 3px solid $main-color;
-            padding: 0.8rem;
-            text-align: left;
-
-            p {
-                font-size: 14px;
-            }
-        }
-        .social-media {
-            display: flex;
-            justify-content: space-evenly;
-            margin: 1rem;
-
-            i {
-                height: 2rem;
-
-                &:hover {
-                    color: $main-color;
-                }
-            }
-        }
+    .about-info {
+      display: flex;
     }
-    // Specialization
-    &-b {
-        background: $medium-color;
-
-        .specialties {
-            margin-top: 3rem;
-            display: grid;
-            grid-gap: 1rem;
-            grid-template-columns: repeat(3, 1fr);
-
-            p {
-                overflow: hidden;
-            }
-
-            .fas {
-                color: $main-color;
-                padding-bottom: 0.4rem;
-            }
-        }
+    // Grid Area
+    .bio-image {
+      margin: 1rem;
+      height: 20rem;
+      width: auto;
     }
+    .bio {
+      background-color: $medium-color;
+      margin: 1rem;
+      border-left: 3px solid $main-color;
+      padding: 0.8rem;
+      text-align: left;
+
+      p {
+        font-size: 14px;
+      }
+    }
+    .social-media {
+      display: flex;
+      justify-content: space-evenly;
+      margin: 1rem;
+
+      i {
+        height: 2rem;
+
+        &:hover {
+          color: $main-color;
+        }
+      }
+    }
+  }
+  // Specialization
+  &-b {
+    background: $medium-color;
+
+    .specialties {
+      margin-top: 3rem;
+      display: grid;
+      grid-gap: 1rem;
+      grid-template-columns: repeat(3, 1fr);
+
+      p {
+        overflow: hidden;
+      }
+
+      .fas {
+        color: $main-color;
+        padding-bottom: 0.4rem;
+      }
+    }
+  }
+
+  // Technical Skills
+  &-c {
+    background: $light-color;
 
     // Technical Skills
-    &-c {
-        background: $light-color;
+    .skills {
+      padding: 0.8rem 3rem;
 
-          // Technical Skills
-          .skills {
-            padding: .8rem 3rem;
+      h4 {
+        text-align: left;
+      }
 
-            h4 {
-                text-align: left;
-            }
-
-            .progress {
-                overflow: hidden;
-                height: 15px;
-                background: $dark-color;
-                border-radius: 5px;
-                margin-bottom: 0.3rem;
-    
-                div {
-                    height: 100%;
-                    color: white;
-                    text-align: center;
-                    background: $main-color;
-                }
-            }
-        }
-    }
-
-    // Skills
-    &-d {
-        background: $medium-color;
-
-          // Technical Skills
-          .skills {
-            padding: .8rem 3rem;
-
-            h4 {
-                text-align: left;
-            }
-
-            .progress {
-                overflow: hidden;
-                height: 15px;
-                background: $dark-color;
-                border-radius: 5px;
-                margin-bottom: 0.3rem;
-    
-                div {
-                    height: 100%;
-                    color: white;
-                    text-align: center;
-                    background: $main-color;
-                }
-            }
-        }
-    }
-
-    // Photography
-    &-e {
+      .progress {
+        overflow: hidden;
+        height: 15px;
         background: $dark-color;
-        color: $medium-color;
-        
-        .photos {
-            overflow: hidden;
-            display: flex;
-            flex-flow: row wrap;
-            justify-content: center;
+        border-radius: 5px;
+        margin-bottom: 0.3rem;
 
-            .tall {
-                height: 522px;
-                width: 380px;
-                margin: 1rem;
-                margin-top: 0;
-            }
-
-            .short {
-                height: 276px;
-                width: 380px;
-                margin: 1rem;
-                margin-top: 0;
-            }
+        div {
+          height: 100%;
+          color: white;
+          text-align: center;
+          background: $main-color;
         }
+      }
     }
+  }
 
-    // Contact Form
-    &-f {
+  // Skills
+  &-d {
+    background: $medium-color;
+
+    // Technical Skills
+    .skills {
+      padding: 0.8rem 3rem;
+
+      h4 {
+        text-align: left;
+      }
+
+      .progress {
+        overflow: hidden;
+        height: 15px;
+        background: $dark-color;
+        border-radius: 5px;
+        margin-bottom: 0.3rem;
+
+        div {
+          height: 100%;
+          color: white;
+          text-align: center;
+          background: $main-color;
+        }
+      }
+    }
+  }
+
+  // Photography
+  &-e {
+    background: $dark-color;
+    color: $medium-color;
+
+    .photos {
+      overflow: hidden;
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: center;
+
+      .tall {
+        height: 522px;
+        width: 380px;
+        margin: 1rem;
+        margin-top: 0;
+      }
+
+      .short {
+        height: 276px;
+        width: 380px;
+        margin: 1rem;
+        margin-top: 0;
+      }
+    }
+  }
+
+  // Contact Form
+  &-f {
+    background: $medium-color;
+
+    .contact-page {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      form {
+        margin: 0 5rem 2rem 5rem;
+        width: 70%;
+
+        .text-fields {
+          display: grid;
+          grid-template-areas:
+            "name subject"
+            "email phone"
+            "message message";
+          grid-gap: 1.2rem;
+          margin-bottom: 1.2rem;
+
+          // Grid Areas
+          .name-input {
+            grid-area: name;
+          }
+          .subject-input {
+            grid-area: subject;
+          }
+          .email-input {
+            grid-area: email;
+          }
+          .phone-input {
+            grid-area: phone;
+          }
+          .message-input {
+            grid-area: message;
+            height: 120px;
+          }
+
+          .text-input {
+            padding: 0.5rem 1rem;
+          }
+          button {
+            width: 50px;
+          }
+        }
+        .recaptcha {
+          margin: 2rem 0;
+          display: flex;
+          justify-content: center;
+        }
+      }
+      #contact-info {
         background: $medium-color;
-
-        .contact-page {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-
-            form {
-                margin: 0 5rem 2rem 5rem;
-                width: 70%;
-    
-                .text-fields {
-                    display: grid;
-                    grid-template-areas:
-                        'name subject'
-                        'email phone'
-                        'message message';
-                    grid-gap: 1.2rem;
-                    margin-bottom: 1.2rem;
-        
-                    // Grid Areas
-                    .name-input {
-                        grid-area: name;
-                    }
-                    .subject-input {
-                        grid-area: subject;
-                    }
-                    .email-input {
-                        grid-area: email;
-                    }
-                    .phone-input {
-                        grid-area: phone;
-                    }
-                    .message-input {
-                        grid-area: message;
-                        height: 120px;
-                    }
-        
-                    .text-input {
-                        padding: 0.5rem 1rem;
-                    }
-                    button {
-                        width: 50px
-                    }
-
-                }
-                .recaptcha {
-                    margin: 2rem 0;
-                    display: flex;
-                    justify-content: center;
-                }
-            }
-            #contact-info {
-                background: $medium-color;
-                width: 20rem;
-            }
-        }
+        width: 20rem;
+      }
     }
+  }
 }
-
 
 // Footer
 #main-footer {
-    background: $dark-color;
-    color: $light-color;
+  background: $dark-color;
+  color: $light-color;
+  height: 4rem;
+
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
     height: 4rem;
+    align-items: center;
 
-    .footer-content {
-        display: flex;
-        justify-content: space-between;
-        height: 4rem;
-        align-items: center;
+    .social .fab {
+      color: $light-color;
+      margin-right: 1rem;
+      border: 2px #fff solid;
+      border-radius: 50%;
+      height: 20px;
+      width: 20px;
+      line-height: 20px;
+      text-align: center;
+      padding: 0.5rem;
 
-        .social .fab {
-            color: $light-color;
-            margin-right: 1rem;
-            border: 2px #fff solid;
-            border-radius: 50%;
-            height: 20px;
-            width: 20px;
-            line-height: 20px;
-            text-align: center;
-            padding: 0.5rem;
-
-            &:hover {
-                background: $main-color;
-            }
-        }
+      &:hover {
+        background: $main-color;
+      }
     }
+  }
 }
 
-@import 'media';
+@import "media";

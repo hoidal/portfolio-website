@@ -1,176 +1,173 @@
 // Tablets and Smaller
-@media(max-width: 800px) {
-    #header-home {
-        height: 30rem;
+@media (max-width: 800px) {
+  #header-home {
+    height: 30rem;
 
-        .main-nav {
-            ul {
-                margin: 0 auto;
-            }
-        }
+    .main-nav {
+      ul {
+        margin: 0 auto;
+      }
     }
+  }
 
-    #home-a {
-        .about-info {
-            flex-direction: column;
+  #home-a {
+    .about-info {
+      flex-direction: column;
 
-            .social-media {
-                margin: 0 auto;
-                padding: 1rem;
-                width: 50%;
-            }
-        }
+      .social-media {
+        margin: 0 auto;
+        padding: 1rem;
+        width: 50%;
+      }
     }
+  }
 
-    #home-f {
-        form {
-            margin: 0 auto;
-            width: 70vw;  
-        }
+  #home-f {
+    form {
+      margin: 0 auto;
+      width: 70vw;
     }
+  }
 }
 
 // Smartphones
-@media(max-width: 500px) {
-
-    // home header and nav
-    #header {
-        &-home {
-            height: 10rem;
-            border-bottom: 3px solid $main-color;
-            .header-content {
-                display: none;
-            }
-            .main-nav {
-                height: 4rem;
-                ul {
-                    align-items: center;
-                    flex-flow: row wrap;
-                    #home-li {
-                        display: none;
-                    }
-                    li {
-                        padding: .3rem;
-                        a {
-                            font-size: 12px;
-                        }
-                    }
-                }
-            }
-        }
-    }
-
-    // about me
-    #home-a {
-        padding: 1rem;
-        .container {
-            padding: 0;
-        }
-        .about-info {
-            align-items: center;
-        }
-        .social-media {
-            i {
-                margin: .3rem;
-            }
-        }
-        .bio {
-            margin: 1rem 0;
-            padding: .5rem;
-            border: none;
-        }
-    }
-
-    // specialties
-    #home-b {
-        padding: 1rem;
-
-        .specialties {
-            margin-top: 1rem;
-            display: flex;
-            flex-direction: column;
-            
-            div {
-                margin: 1rem 0;
-            }
-        }
-    }
-
-    // skills progress sliders
-    #home-c {
-        padding: 1rem;
-        .skills {
-            padding: 0;
-        }
-    }
-
-    // work
-    #home-d {
-        padding: 1rem;
-        .items {
-            display: grid;
-            grid-template-columns: 1fr;
-
-            .item-text {
-                p {
-                    font-size: 15px;
-                }
-                h2 {
-                    font-size: 20px;
-                }
-            }
-        }
-    }
-
-    // photography
-    #home-e {
-        padding: 1rem;
-
-        .photos {
-            .tall {
-                margin: .5rem 0;
-                height: 405px;
-                
-            }
-            .short {
-                margin: .5rem 0;
-                height: 215px;
-            }
-        }
-    }
-
-    // contact form
-    #home-f {
-        padding: 1rem;
-        .contact-page {
-            form {
-                width: 100%;
-                margin: 0 0 2rem 0;
-                .text-fields {
-                    grid-template-areas:
-                    'name'
-                    'subject'
-                    'email'
-                    'phone'
-                    'message';
-                }
-            }
-        }
-    }
-
-    // footer
-    #main-footer {
+@media (max-width: 500px) {
+  // home header and nav
+  #header {
+    &-home {
+      height: 10rem;
+      border-bottom: 3px solid $main-color;
+      .header-content {
+        display: none;
+      }
+      .main-nav {
         height: 4rem;
-    
-        .footer-content {
-            .social .fab {
-                display: none;
-    
-                &:hover {
-                    background: $main-color;
-                }
+        ul {
+          align-items: center;
+          flex-flow: row wrap;
+          #home-li {
+            display: none;
+          }
+          li {
+            padding: 0.3rem;
+            a {
+              font-size: 12px;
             }
+          }
         }
+      }
     }
-}
+  }
 
+  // about me
+  #home-a {
+    padding: 1rem;
+    .container {
+      padding: 0;
+    }
+    .about-info {
+      align-items: center;
+    }
+    .social-media {
+      i {
+        margin: 0.3rem;
+      }
+    }
+    .bio {
+      margin: 1rem 0;
+      padding: 0.5rem;
+      border: none;
+    }
+  }
+
+  // specialties
+  #home-b {
+    padding: 1rem;
+
+    .specialties {
+      margin-top: 1rem;
+      display: flex;
+      flex-direction: column;
+
+      div {
+        margin: 1rem 0;
+      }
+    }
+  }
+
+  // skills progress sliders
+  #home-c {
+    padding: 1rem;
+    .skills {
+      padding: 0;
+    }
+  }
+
+  // work
+  #home-d {
+    padding: 1rem;
+    .items {
+      display: grid;
+      grid-template-columns: 1fr;
+
+      .item-text {
+        p {
+          font-size: 15px;
+        }
+        h2 {
+          font-size: 20px;
+        }
+      }
+    }
+  }
+
+  // photography
+  #home-e {
+    padding: 1rem;
+
+    .photos {
+      .tall {
+        margin: 0.5rem 0;
+        height: 405px;
+      }
+      .short {
+        margin: 0.5rem 0;
+        height: 215px;
+      }
+    }
+  }
+
+  // contact form
+  #home-f {
+    padding: 1rem;
+    .contact-page {
+      form {
+        width: 100%;
+        margin: 0 0 2rem 0;
+        .text-fields {
+          grid-template-areas:
+            "name"
+            "subject"
+            "email"
+            "phone"
+            "message";
+        }
+      }
+    }
+  }
+
+  // footer
+  #main-footer {
+    height: 4rem;
+
+    .footer-content {
+      .social .fab {
+        display: none;
+
+        &:hover {
+          background: $main-color;
+        }
+      }
+    }
+  }
+}
